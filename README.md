@@ -1,4 +1,4 @@
-# Sou aluna da Turma 28 | Outubro de 2022.
+# Sou aluna da Turma 28 | Me chamo Caroline Fernandes da Costa.
 
 A Trybe é uma escola de tecnologia que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes.
 
