@@ -1,13 +1,15 @@
 .super-mario {
     width: 200px;
+    display: block;
   }
   
   .goomba {
     width: 100px;
+    
   }
   
   .baloon {
-  
+
   }
   
   .speach {
