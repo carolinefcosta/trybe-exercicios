@@ -16,3 +16,21 @@ div:hover {
 .clara {
     background-color: aquamarine;
 }
+#corPrimaria {
+    font-style: italic;
+    text-decoration: line-through;
+}
+#corSecundaria {
+    color: white;
+}
+#corComplementar {
+    font-style: italic;
+    font-size: 30px;
+}
+#corEscura {
+    font-weight: bold;
+}
+#corClara {
+    font-style: italic;
+    text-decoration: underline;
+}
