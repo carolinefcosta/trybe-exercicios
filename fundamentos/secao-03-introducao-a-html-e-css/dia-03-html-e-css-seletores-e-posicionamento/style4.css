@@ -1,0 +1,52 @@
+ol {
+    background-color: yellow;
+}
+ol .par {
+    color: green;
+}
+ol .impar {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+h1, h3 {
+    color: red;
+}
+li {
+    font-size: 20px;
+}
+.negrito {
+    font-weight: bold;
+}
+.tresprimeiras {
+    color: blue;
+}
+.fundorosa {
+    background-color: pink;
+}
+a:link, a:hover{
+    text-decoration: none;
+    font-weight: bold; 
+}
+.stack:hover{
+    color: orange;
+    background-color: orange;
+}
+.w3:hover{
+    color: green;
+    background-color: green;
+}
+.mdn:hover{
+    color: black;
+    background-color: black;
+}
+.dev:hover{
+    color: yellow;
+    background-color: yellow;
+}
+.trybe:hover{
+    color:green;
+    background-color: green;
+}

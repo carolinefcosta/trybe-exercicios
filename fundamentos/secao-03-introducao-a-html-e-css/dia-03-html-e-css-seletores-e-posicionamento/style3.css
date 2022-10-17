@@ -1,0 +1,36 @@
+div:hover {
+    border: 10px solid black;
+}
+.primaria {
+    background-color: red;
+}
+.secundaria {
+    background-color: orange;
+}
+.complementar {
+    background-color: rgb(220, 20, 60);
+}
+.escura {
+    background-color: brown;
+}
+.clara {
+    background-color: aquamarine;
+}
+#corPrimaria {
+    font-style: italic;
+    text-decoration: line-through;
+}
+#corSecundaria {
+    color: white;
+}
+#corComplementar {
+    font-style: italic;
+    font-size: 30px;
+}
+#corEscura {
+    font-weight: bold;
+}
+#corClara {
+    font-style: italic;
+    text-decoration: underline;
+}
