@@ -5,10 +5,16 @@
   
   .goomba {
     width: 100px;
+    display: block;
     
   }
   
   .baloon {
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    left: 10px;
 
   }
   
@@ -18,4 +24,17 @@
   
   .bowser {
     width: 200px;
+    display: inline;
+    position: absolute;
+    z-index: 3;
+    left: 330px;
+    top: 670px;
+  }
+
+  p {
+    display: inline;
+    position: absolute;
+    z-index: 2;
+    top: 570px;
+    left: 40px;
   }
