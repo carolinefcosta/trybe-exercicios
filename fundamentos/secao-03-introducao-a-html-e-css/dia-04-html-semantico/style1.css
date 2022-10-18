@@ -34,7 +34,7 @@ h2 {
     display: inline-block;
     float: right;
     border: solid thin black;
-    padding: 5px 5px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     background-color: rgb(112, 128, 144);
@@ -47,8 +47,12 @@ h2 {
     color: white;
     text-decoration: none;
     text-align: center;
+    padding: 10px 10px;
 
 }
 .video:hover {
     background-color: white;
+}
+.footer {
+    text-align: center;
 }
