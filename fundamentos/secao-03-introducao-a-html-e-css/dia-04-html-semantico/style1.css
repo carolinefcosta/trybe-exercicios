@@ -1,4 +1,18 @@
+* {
+    font-family: fantasy;
+}
+.header {
+    padding: 5px 5px;
+    display: inline-block;
+    background-color: rgb(128, 128, 128);
+    color: black;
+    width: 100%;
+    margin: 0%;
+}
 .linksnav {
+    display: inline-block;
     padding: 5px 5px;
     background-color: rgb(220,220,220);
+    width: 100%;
+    margin: 0;
 }
