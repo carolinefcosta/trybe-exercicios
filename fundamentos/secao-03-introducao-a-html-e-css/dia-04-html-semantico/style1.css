@@ -1,18 +1,40 @@
 * {
+    box-sizing: border-box;
+}
+body {
     font-family: fantasy;
+    background-color: rgb(173, 216, 230);
 }
 .header {
     padding: 5px 5px;
     display: inline-block;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(70, 130, 180);
     color: black;
     width: 100%;
-    margin: 0%;
+    margin: auto;
 }
 .linksnav {
     display: inline-block;
     padding: 5px 5px;
     background-color: rgb(220,220,220);
     width: 100%;
-    margin: 0;
+    margin: auto;
+}
+img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+}
+h2 {
+    padding-left: 40%;
+
+}
+.classificacao {
+    display: inline-block;
+    float: right;
+    border: solid thin black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
 }
