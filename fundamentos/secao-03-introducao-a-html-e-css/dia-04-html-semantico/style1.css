@@ -43,3 +43,12 @@ h2 {
     font-size: 10px;
     text-align: center;
 }
+.video {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+.video:hover {
+    background-color: white;
+}
