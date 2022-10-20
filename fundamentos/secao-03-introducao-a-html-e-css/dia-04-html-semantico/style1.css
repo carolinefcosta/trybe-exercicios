@@ -7,11 +7,13 @@ body {
 }
 .header {
     padding: 5px 5px;
-    display: inline-block;
+    
     background-color: rgb(70, 130, 180);
     color: black;
     width: 100%;
-    margin: auto;
+
+    top: 0;
+    left: 0;
 }
 .linksnav {
     display: inline-block;
