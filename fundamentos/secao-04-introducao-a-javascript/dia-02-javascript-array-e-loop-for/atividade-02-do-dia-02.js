@@ -1,6 +1,6 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-/*for (let index = 1; index < numbers.length; index += 1) {
+for (let index = 1; index < numbers.length; index += 1) {
   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
     if (numbers[index] < numbers[secondIndex]) {
       let position = numbers[index];
@@ -22,7 +22,7 @@ for (let index = 1; index < numbers.length; index += 1) {
         }
       }
       
-      console.log(numbers);*/
+      console.log(numbers);
 
       let newArray = [];
       
@@ -35,4 +35,13 @@ for (let index = 1; index < numbers.length; index += 1) {
       }
       
       console.log(newArray);
+
+const n = 9;
+
+let resultados = 100;
+for (let i =1; i < n; i+=1){
+  resultados -= i;
+}
+console.log(resultados);*/
+
       
