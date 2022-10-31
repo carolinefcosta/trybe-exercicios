@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const criandoH1 = document.createElement('h1');
+      criandoH1.innerText = 'Exercício - JavaScript DOM';
+      criandoH1.className = 'title';
+      document.body.appendChild(criandoH1);
+
+      const criandoMain = document.createElement('main');
+      criandoMain.className = 'main-content';
+      document.body.appendChild(criandoMain);
+
+      const criandoSection = document.createElement('section');
+      criandoSection.className = 'center-content';
+      criandoMain.appendChild(criandoSection);
+
+      const criandoP = document.createElement('p');
+      criandoP.innerText = 'Olá! sou eu aqui!';
+      criandoSection.appendChild(criandoP);
+
+      const criandoSection2 = document.createElement('section');
+      criandoSection2.className = 'left-content';
+      criandoMain.appendChild(criandoSection2);
+
+      const criandoSection3 = document.createElement('section');
+      criandoSection3.className = 'right-content';
+      criandoMain.appendChild(criandoSection3);
+
+      const adicImg = document.createElement('img');
+      adicImg.src = 'https://picsum.photos/200';
+      adicImg.className = 'small-image';
+      criandoSection2.appendChild(adicImg);
+
+      const criandoListaNaoOrdenada = document.createElement('ul');
+      criandoSection3.appendChild(criandoListaNaoOrdenada);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let numeros in arrayNumbers){
+            const criandoItensDaLista = document.createElement('li');
+            criandoItensDaLista.innerHTML = arrayNumbers[numeros];
+            criandoListaNaoOrdenada.appendChild(criandoItensDaLista);
+        };
+    
+      const criandoH3 = document.createElement('h3');
+      criandoH3.innerText = 'Show 1';
+      criandoH3.className = 'description';
+      criandoMain.appendChild(criandoH3);  
+
+      const criandoH3Novo = document.createElement('h3');
+      criandoH3Novo.innerText = 'Show 2';
+      criandoH3Novo.className = 'description';
+      criandoMain.appendChild(criandoH3Novo);
+
+      const criandoH3Novamente = document.createElement('h3');
+      criandoH3Novamente.innerText = 'Show 3';
+      criandoH3Novamente.className = 'description';
+      criandoMain.appendChild(criandoH3Novamente);
+
+      const removendoLeftContent = document.getElementsByClassName('left-content')[0];
+      criandoMain.removeChild(removendoLeftContent);
+
+      const centralizandoRightContent = document.getElementsByClassName('right-content')[0];
+      centralizandoRightContent.style.marginRight = 'auto';
+
+      const corDeFundoCenterContent = document.getElementsByClassName('center-content')[0];
+      corDeFundoCenterContent.style.backgroundColor = 'rgb(144,238,144)';
+
+      const removeUl = document.getElementsByTagName('ul')[0];
+      removeUl.lastChild.remove();
+      removeUl.lastChild.remove();
+    </script>
+  </body>
+</html>
