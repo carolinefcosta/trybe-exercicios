@@ -114,3 +114,12 @@ function segundaFuncaoMouse () {
   })
 };
 segundaFuncaoMouse();
+
+function armazenaClasSemyTasks (tasks) {
+  let myTasksContainer = document.querySelector('.my-tasks');
+  let criandoSpan = document.createElement('span');
+
+  criandoSpan.innerHTML = tasks;
+  myTasksContainer.appendChild(criandoSpan);
+}
+armazenaClasSemyTasks('Projeto');
