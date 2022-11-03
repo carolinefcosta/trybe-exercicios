@@ -127,8 +127,23 @@ armazenaClasSemyTasks('Projeto');
 function novaFuncao (cor) {
   let myTasksContainer = document.querySelector('.my-tasks');
   let criandoDiv = document.createElement('div');
+
   criandoDiv.className = 'task';
   criandoDiv.style.backgroundColor = cor;
   myTasksContainer.appendChild(criandoDiv);
 }
 novaFuncao('pink');
+
+function taskSelected () {
+  let selectedTaks = document.getElementsByClassName('task selected');
+  let tasks = document.querySelector('#task');
+
+  tasks.addEventListener('click', (evento) => {
+    if (selectedTaks.length === 0){
+      evento.target.className = 'task selected';
+    } else {
+      evento.target.className = 'task';
+    }
+  });
+}
+taskSelected();
