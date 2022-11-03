@@ -54,7 +54,7 @@ function selecionaHoliday () {
   let pegaBotao = document.querySelector('#btn-holiday');
   let pegaHoliday = document.querySelectorAll('.holiday');
   let corDeFundo = 'rgb(238,238,238)'; 
-  let novaCor = 'rgb(152,251,152)';
+  let novaCor = 'rgb(219,112,147)';
 
   pegaBotao.addEventListener('click',()=>{
     for (let index = 0; index <pegaHoliday.length; index += 1){
