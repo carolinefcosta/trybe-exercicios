@@ -123,3 +123,12 @@ function armazenaClasSemyTasks (tasks) {
   myTasksContainer.appendChild(criandoSpan);
 }
 armazenaClasSemyTasks('Projeto');
+
+function novaFuncao (cor) {
+  let myTasksContainer = document.querySelector('.my-tasks');
+  let criandoDiv = document.createElement('div');
+  criandoDiv.className = 'task';
+  criandoDiv.style.backgroundColor = cor;
+  myTasksContainer.appendChild(criandoDiv);
+}
+novaFuncao('pink');
