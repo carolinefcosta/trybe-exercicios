@@ -83,7 +83,7 @@ function ExibeSextasFeiras(sextasFeiras) {
   let sextas = document.getElementsByClassName('friday');
   let novaMsgParaAsSextas = 'SEXTA UHUU o/'
 
-  botaoFriday.addEventListener('click', ()=>{
+  botaoFriday.addEventListener('click', () => {
     for (let index = 0; index < sextas.length; index += 1) { 
       if (sextas[index].innerHTML !== novaMsgParaAsSextas) {
       sextas[index].innerHTML = novaMsgParaAsSextas;
@@ -94,3 +94,23 @@ function ExibeSextasFeiras(sextasFeiras) {
   });
 }
 ExibeSextasFeiras();
+
+function primeiraFuncaoMouse () {
+  let recuperaDays = document.querySelector('#days');
+
+  recuperaDays.addEventListener('mouseover', (evento) => {
+    evento.target.style.fontSize = '50px';
+    evento.target.style.fontWeigth = '600';
+  })
+};
+primeiraFuncaoMouse();
+
+function segundaFuncaoMouse () {
+  let recuperaDays = document.querySelector('#days');
+
+  recuperaDays.addEventListener('mouseout', (evento) => {
+    evento.target.style.fontSize = '20px';
+    evento.target.style.fontWeigth = '200';
+  })
+};
+segundaFuncaoMouse();
