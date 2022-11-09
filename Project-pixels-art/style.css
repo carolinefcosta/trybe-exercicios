@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(238, 156, 201);
+    background-image: url("fundo.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
 }
 
