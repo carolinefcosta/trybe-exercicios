@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  <title>TrybeTrip</title>
+</head>
+<body>
+  <header>
+    <h1 class="h1 container-fluid">Concurso TrybeTrip</h1>
+  </header>
+  <main>
+    <form action="" method="get">
+      <section class="container-fluid">
+        <label for="nomeCompleto">Nome:</label>
+        <input type="text" id="nomeCompleto" placeholder="Insira seu nome completo" min="10" max="40" required class="form-control">
+      </section>
+      <br>
+      <section class="container-fluid">
+        <label for="e-mail">E-mail:</label>
+        <input type="email" id="e-mail" placeholder="Insira seu e-mail" min="10" max="50" required class="form-control">
+      </section>
+      <br>
+      <section class="container-fluid">
+        <p>Destino Preferido:</p>
+        <input type="radio" name="destinos" id="cidade">
+        <label for="cidade">Cidade</label>
+
+        <input type="radio" name="destinos" id="campo">
+        <label for="campo">Campo</label>
+
+        <input type="radio" name="destinos" id="praia">
+        <label for="praia">Praia</label>
+
+        <input type="radio" name="destinos" id="montanha">
+        <label for="montanha">Montanhas</label>
+      </section>
+      <br>
+      <section class="container-fluid">
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="" id="resumoGanhador" cols="30" rows="10" maxlength="500" class="form-control"></textarea>
+      </section>
+      <br>
+      <section class="container-fluid">
+        <label for="melhorData">Melhor data para sua viagem:</label>
+        <input type="date" id="melhorData">
+      </section>
+      <br>
+      <section class="container-fluid">
+        <input type="checkbox" id="aceito" required>
+        <label for="aceito">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <br>
+        <input type="checkbox" id="aceitoNovamente" required>
+        <label for="aceitoNovamente">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </section>
+      <br>
+      <section class="container-fluid">
+        <button type="submit" id="botaoSubmit" class="btn btn-success">Participar do Concurso</button>
+        <button type="reset" id="botaoReset" class="btn btn-danger">Limpar Dados</button>
+      </section>
+    </form>
+  </main>
+</body>
+</html>
