@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
 .header {
   display: flex;
   flex-flow: row nowrap;
@@ -10,4 +17,19 @@
 .header #imgLogo {
   width: 5%;
   height: 5%;
+}
+
+.section-one #pOne {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
 }
