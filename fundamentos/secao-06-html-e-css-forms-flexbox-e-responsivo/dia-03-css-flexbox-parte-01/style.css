@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+
+}
+
+.header #imgLogo {
+  width: 5%;
+  height: 5%;
+}
