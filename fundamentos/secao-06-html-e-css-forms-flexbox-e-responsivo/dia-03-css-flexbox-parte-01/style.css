@@ -67,6 +67,12 @@ h4 {
   width: 150px;
 }
 
+div {
+  text-align: center;
+  color: rgba(161, 161, 161, 0.5);
+  margin-bottom: 5px;
+}
+
 footer {
   display: flex;
   flex-flow: row nowrap;
