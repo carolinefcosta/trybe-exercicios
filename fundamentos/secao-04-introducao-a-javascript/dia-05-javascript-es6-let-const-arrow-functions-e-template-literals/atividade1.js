@@ -1,15 +1,3 @@
-// Executando esse código iremos receber um erro `TypeError: Assignment to constant variable.`
-/*let pessoa = {
-        nome: 'Henri',
-        idade: 20
-      }
-        pessoa = {
-        nome: 'Luna',
-        idade: 19
-      } // Altere essa estrutura para corrigir o erro.
-      console.log('Nome:', pessoa.nome);
-      console.log('Idade:', pessoa.idade);*/
-
 //🚀 Transforme a função numeroAleatorio em uma arrow function; Copie o código abaixo:
 /*function numeroAleatorio() {
     return Math.random()
@@ -25,9 +13,9 @@ let aletorioNumero = () => Math.random();
   let nome = 'Ivan';
   console.log(hello(nome));*/
 
-/*let hello = nome => `Olá, ${nome}`;
+let hello = nome => `Olá, ${nome}`;
 let nome = 'Carol';
-console.log(hello(nome));*/
+console.log(hello(nome));
 
 //🚀 Transforme a função nomeCompleto em uma arrow function;
 /*function nomeCompleto(nome, sobrenome) {
