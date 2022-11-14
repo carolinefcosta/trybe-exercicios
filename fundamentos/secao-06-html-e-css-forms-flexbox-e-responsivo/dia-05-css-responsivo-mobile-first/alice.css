@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 468px) {
+  body {
+    background-color: rgba(175, 120, 226, 0.637);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: rgba(127, 255, 212, 0.699);
+  }
+}
