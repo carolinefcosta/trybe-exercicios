@@ -1,4 +1,4 @@
-const techList = require('./techList.js');
+const {techList, somatoria} = require('./techList.js');
 
 describe('Testa a função techList', () => {
   it('Testa se a função techList é definida', () => {
@@ -34,4 +34,13 @@ describe('Testa a função techList', () => {
   it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
     expect(techList([], 'Lucas')).toBe('Vazio!');
   });
+});
+
+describe('verificando função 2 - somatoria', () => {
+  it('verifica se somatoria é função', () => {
+    expect(typeof somatoria).toBe('function');
+  });
+  it('verifica se somatoria de 1 até 1 é igual a 1', () => {
+    expect(somatoria(1)).toBe(1);
+  })
 });

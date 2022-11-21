@@ -10,8 +10,16 @@ const techList = (arrayTechnologies, name) => {
       name,
     });
   }
-
   return technologyList;
 };
 
-module.exports = techList;
+const somatoria = (numeros) => {
+  let somando = 0;
+
+  for(let index = 1; index <= numeros; index += 1) {
+    somando += index;
+  };
+  return somando;
+};
+
+module.exports = {techList, somatoria};
