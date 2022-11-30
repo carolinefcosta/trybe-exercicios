@@ -61,13 +61,12 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
 // Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
-const authorBornIn1947 = () => {
-  return books.find((book) => book.author.birthYear === 1947).author.name;
-};
+const find = books.find((elemento) => elemento.author.birthYear === 1947).author.name;
 
-// Retorne o nome do livro com menor número de caracteres (menor nome).
+console.log(find);
+
+// Retorne o nome do livro de menor nome.
 const smallerName = () => {
   let nameBook;
 
@@ -77,21 +76,19 @@ const smallerName = () => {
     }
   });
   return nameBook;
-}
+};
 
 // Encontre o primeiro livro cujo nome possua 26 caracteres.
-const getNamedBook = () => {
-  return books.find((book) => book.name.length === 26);
-};
+const primeiroLivroFind = books.find((book) => book.name.length === 26);
+
+console.log(primeiroLivroFind);
 
 // Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
-const everyoneWasBornOnSecXX = () => {
-  return books.every((book) => (
-    book.author.birthYear >= 1901 && book.author.birthYear <= 2000
-  ));
-};
+const verificaEvery = books.every((elemento) => elemento.author.birthYear >= 1901 && elemento.author.birthYear <= 2000);
+
+console.log(verificaEvery);
 
 // Faça uma função que retorne true, se algum livro tiver sido lançado na década de 80, e false, caso contrário.
-const someBookWasReleaseOnThe80s = () => {
-  return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
-};
+const verificaSome = books.some((elemento) => elemento.releaseYear >= 1980 && elemento.releaseYear <= 1989);
+
+console.log(verificaSome);
