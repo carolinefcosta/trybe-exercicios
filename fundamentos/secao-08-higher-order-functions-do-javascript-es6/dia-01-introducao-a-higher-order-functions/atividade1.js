@@ -3,7 +3,6 @@ const infoFuncionarios = (nomeCompleto) => {
 
   return {nomeCompleto, email:`${email}@trybe.com`};
 };
-// console.log(infoFuncionarios('Caroline Fernandes'));
 
 const newEmployees = (nomeFuncionario) => {
   const employees = {
