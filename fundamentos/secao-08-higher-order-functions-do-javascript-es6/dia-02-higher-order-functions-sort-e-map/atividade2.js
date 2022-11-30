@@ -87,6 +87,6 @@ const ordenandoArray = criandoArray.sort((a, b) => a.age - b.age);
 console.log(ordenandoArray);
 
 // Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-const nomeLivroGeneroEAutor = books.map((elemento) => `${elemento.name} - ${elemento.genre} - ${elemento.author.name}`);
+const nomeDoLivroGeneroAutor = books.map((elemento) => `${elemento.name} - ${elemento.genre} - ${elemento.author.name}`);
 
-console.log(nomeLivroGeneroEAutor);
+console.log(nomeDoLivroGeneroAutor);
