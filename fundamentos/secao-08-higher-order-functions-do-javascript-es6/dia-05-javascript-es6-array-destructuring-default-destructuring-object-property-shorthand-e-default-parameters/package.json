@@ -1,0 +1,15 @@
+{
+  "name": "dia-05-javascript-es6-array-destructuring-default-destructuring-object-property-shorthand-e-default-parameters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "atividade1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
