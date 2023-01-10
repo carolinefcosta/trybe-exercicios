@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clipboard-copy": "^4.0.1",
     "nanoid": "^3.3.4",
     "vite": "^4.0.4"
   },
