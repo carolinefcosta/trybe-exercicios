@@ -23,20 +23,20 @@ const getMoedas = () => {
         .then((info) => {
             const array = Object.entries(info.rates);
             const keys = Object.keys(info.rates);
-            if (INPUT.value === "") {
-                TITLE.innerText = "";
-                throw new Error('Você precisa passar alguma moeda!')
+            if (INPUT.value === '') {
+                TITLE.innerText = '';
+                throw new Error('Você precisa passar alguma moeda!');
             } else if (keys.includes(INPUT.value)){
                 array.forEach((valor) => {                        
                     const novoP = document.createElement('p');
                     novoP.className = 'p';       
                     novoP.innerText = `💰 ${valor[0]}:  ${valor[1]}`;
-                    TITLE.innerText = `Valores Referentes a 1 ${INPUT.value}`
+                    TITLE.innerText = `Valores Referentes a 1 ${INPUT.value}`;
                     CONSTAINER_RESULT.appendChild(novoP);                    
                 });
             } else {
                 TITLE.innerText = '';
-                throw new Error(`A moeda ${INPUT.value} não é valida!`)
+                throw new Error(`A moeda ${INPUT.value} não é valida!`);
             }
         })
         .catch((error) => {
