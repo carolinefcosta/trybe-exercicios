@@ -1,0 +1,23 @@
+{
+  "name": "dia-04-async-await-e-testes-unitarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open",
+    "lint": "eslint ./src",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.7.0",
+    "vite": "^4.0.4"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.31.0"
+  }
+}
