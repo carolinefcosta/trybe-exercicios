@@ -5,7 +5,7 @@ const INPUT = document.getElementById('input');
 const BUTTON = document.getElementById('button');
 const RESULT = document.getElementById('result');
 
-BUTTON.addEventListener('click', async () => {
+async function cepInfo() {
   const cep = INPUT.value;
 
   try{
@@ -16,4 +16,6 @@ BUTTON.addEventListener('click', async () => {
   } catch(error) {
     Swal.fire('Ops! Ocorreu um erro.', error.message, 'error');
   }
-});
+}
+
+BUTTON.addEventListener('click', cepInfo);
