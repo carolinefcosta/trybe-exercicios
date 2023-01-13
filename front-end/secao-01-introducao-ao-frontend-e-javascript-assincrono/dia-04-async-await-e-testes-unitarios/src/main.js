@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 import "./style.css";
 
 const INPUT = document.getElementById('input');
@@ -13,6 +14,6 @@ BUTTON.addEventListener('click', async () => {
     RESULT.innerText = JSON.stringify(data);
     console.log(data)
   } catch(error) {
-    RESULT.innerHTML = `CEP inválido: ${error.message}`;
+    Swal.fire('Ops! Ocorreu um erro.', error.message, 'error');
   }
 });
