@@ -1,4 +1,6 @@
 import React from "react";
+import Select from "./Select";
+import TextArea from "./TextArea";
 
 class Form extends React.Component {
   constructor() {
@@ -37,13 +39,7 @@ class Form extends React.Component {
               <input name="idade" id="idade" type='number' onChange={this.handleChange} value={idade} />
             </label>
 
-            <label htmlFor="select">Sexo:
-              <select name='sexo' id="select" onChange={this.handleChange} value={sexo}>
-              <option value="">Selecione</option>
-                <option value='Masc'>Masculino</option>
-                <option value='Fem'>Feminino</option>
-              </select>
-            </label>
+            <Select sexo={sexo} handleChange={this.handleChange} />
 
           </fieldset>
 
@@ -51,9 +47,7 @@ class Form extends React.Component {
 
           <legend>Outros Dados</legend>
 
-            <label htmlFor="textArea">Pontos Fortes:
-              <textarea name="pontosFortes" id="textArea" onChange={this.handleChange} value={pontosFortes} />
-            </label>
+            <TextArea pontosFortes={pontosFortes} handleChange={this.handleChange} />
 
             <input type='file' />
 
