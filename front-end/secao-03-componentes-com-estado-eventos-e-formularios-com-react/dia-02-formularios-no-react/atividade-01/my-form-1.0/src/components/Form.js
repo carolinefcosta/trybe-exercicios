@@ -25,26 +25,39 @@ class Form extends React.Component {
     return (
       <div className="App">
         <form>
+          <fieldset>
 
-          <label htmlFor="select">Sexo:
-            <select name='sexo' id="select" onChange={this.handleChange} value={sexo}>
-            <option value="">Selecione</option>
-              <option value='Masc'>Masculino</option>
-              <option value='Fem'>Feminino</option>
-            </select>
-          </label>
+          <legend>Informações pessoais</legend>
 
-          <label htmlFor="nome">Nome:
-            <input name="nome" id="nome" type='text' onChange={ this.handleChange } value={nome} />
-          </label>
+            <label htmlFor="nome">Nome:
+              <input name="nome" id="nome" type='text' onChange={ this.handleChange } value={nome} />
+            </label>
 
-          <label htmlFor="idade">Idade:
-            <input name="idade" id="idade" type='number' onChange={this.handleChange} value={idade} />
-          </label>
+            <label htmlFor="idade">Idade:
+              <input name="idade" id="idade" type='number' onChange={this.handleChange} value={idade} />
+            </label>
 
-          <label htmlFor="textArea">Pontos Fortes:
-            <textarea name="pontosFortes" id="textArea" onChange={this.handleChange} value={pontosFortes} />
-          </label>
+            <label htmlFor="select">Sexo:
+              <select name='sexo' id="select" onChange={this.handleChange} value={sexo}>
+              <option value="">Selecione</option>
+                <option value='Masc'>Masculino</option>
+                <option value='Fem'>Feminino</option>
+              </select>
+            </label>
+
+          </fieldset>
+
+          <fieldset>
+
+          <legend>Outros Dados</legend>
+
+            <label htmlFor="textArea">Pontos Fortes:
+              <textarea name="pontosFortes" id="textArea" onChange={this.handleChange} value={pontosFortes} />
+            </label>
+
+            <input type='file' />
+
+          </fieldset>
 
         </form>
       </div>
