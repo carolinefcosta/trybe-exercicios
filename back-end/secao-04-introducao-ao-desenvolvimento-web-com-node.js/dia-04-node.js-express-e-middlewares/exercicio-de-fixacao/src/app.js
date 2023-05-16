@@ -1,12 +1,8 @@
 const express = require('express');
 const existingId = require('./middlewares/existingId');
+const teams = require('./data/teams');
 
 const app = express();
-
-const teams = [
-  { id: 1, nome: 'São Paulo Futebol Clube', sigla: 'SPF' },
-  { id: 2, nome: 'Sociedade Esportiva Palmeiras', sigla: 'PAL' },
-];
 
 app.use(express.json());
 
